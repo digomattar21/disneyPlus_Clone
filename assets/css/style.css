@@ -1,0 +1,59 @@
+/* WORKING ON THE BACKGORUND IMAGE AS STATIC AND NAVBAR (LOGIN BUTTON)*/
+
+html { 
+    background: url('https://cannonball-cdn.bamgrid.com/assets/originals/Mlp_Hero_Br_&_Rola_Desktop_v2.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+#login{
+    border: 1px solid white;
+    background: rgba(0,0,0,.6);
+    color: white;
+    padding: 8px 20px;
+    border-radius: 3px;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    font-size: 1rem;
+}
+
+#login:hover{
+    color: black;
+    background-color: rgba(255,255,255,1)
+}
+
+.login-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+
+/* STARTING WORK ON MAIN (WRITTEN THINGS IN MAIN PAGE WITHOUT SCROLL)*/
+
+
+.main{
+    display: flex;
+    flex-direction:column;
+    justify-content: space-around;
+    background-color: green;
+    width:50%;
+    margin-left:3%;
+    margin-top:10%
+}
+
+#disney-logo{
+    height: 170px;
+    width: 170px
+}
+
+
+#main-text{
+    color: white;
+    font-size: 2.5rem;
+}
+
+
