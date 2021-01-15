@@ -1,15 +1,27 @@
 /* WORKING ON THE BACKGORUND IMAGE AS STATIC AND NAVBAR (LOGIN BUTTON)*/
-
-html { 
-    background: url('https://cannonball-cdn.bamgrid.com/assets/originals/Mlp_Hero_Br_&_Rola_Desktop_v2.jpg') no-repeat center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+*{
+    box-sizing: border-box;
+}
+body,html { 
+    height: 100%;
+    margin:0;
+    overflow-x: hidden;
 }
 
+.navbar{
+    position: fixed;
+    visibility: hidden;
+    top: 0%;
+    width: 100vw;
+    height:100px;
+    background-color: #090b13;;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 
 #login{
+    visibility: visible;
     border: 1px solid white;
     background: rgba(0,0,0,.6);
     color: white;
@@ -18,6 +30,7 @@ html {
     margin-right: 2%;
     margin-top: 0.5%;
     font-size: 1rem;
+    width: 8vw    
 }
 
 #login:hover{
@@ -28,32 +41,254 @@ html {
 .login-container{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    align-items:center;
+    width: 30%;
+    justify-content: space-evenly;
 }
 
+#logo-top{
+    width: 40%;
+    height: 75%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+#sign-up-now{
+    border: 1px solid #0483ee;;
+    background: #0483ee;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 3px;
+    margin-right: 2%;
+    margin-top: 0.5%;
+    font-size: 1rem;
+    width: 14vw  
+}
+
+#sign-up-now:hover{
+    background-color: #90b4e4;
+    border: 1px solid  #90b4e4;
+    transition: all .2s ease 0s;
+}
+
+#sign-up-now:focus{
+    outline: none;
+}
 
 /* STARTING WORK ON MAIN (WRITTEN THINGS IN MAIN PAGE WITHOUT SCROLL)*/
 
+#section1{
+    float:left;
+    margin:0;
+    background-image: url('../img/section1-bg.jpeg');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .main{
     display: flex;
     flex-direction:column;
+    align-items: center;
+    margin-top:7%;
+    min-width: 60%;
+    width: 100%;
+}
+
+.wandavision-container{
+    width:100vw;
+    display: flex;
+    flex-direction:column;
     justify-content: space-around;
-    background-color: green;
-    width:50%;
-    margin-left:3%;
-    margin-top:10%
+    align-items: center;
 }
 
-#disney-logo{
-    height: 170px;
-    width: 170px
+#wandavision-img{
+    min-height: 130px;
+    min-width: 500px;
+    width:40vw;
+    height:15vh
 }
 
-
-#main-text{
+#now-streaming{
     color: white;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
 }
+
+.logos-container{
+    margin-top:1%;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+}
+
+#logos-img{
+    max-width: 700px;
+    max-height: 162px;
+    width: 50vw;
+    height: 15vh;
+}
+
+.get-all-btn-container{
+    margin-top: 2%;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    width: 45%;
+}
+
+#get-all-btn{
+    color: white;
+    background-color: #0063e5;
+    border: 1px solid  #0063e5;
+    border-radius: 5px;
+    padding: 15px 20px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+#get-all-btn:hover{
+    background-color: #2170d6;
+    border: 1px solid  #2170d6;
+    transition: all .2s ease 0s;
+
+}
+
+#stream-now{
+    margin-top: 6%;
+    text-align: center;
+    color: hsla(0,0%,75.3%,.8);
+    font-size: 0.8rem;
+}
+
+#terms{
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+}
+
+.disney-logos-container{
+    margin-top: 3%;
+    color: white;
+    text-align: center;
+}
+
+#disney-logos-img{
+    width: 600px;
+    height: 34px;
+}
+
+#sign-up{
+    margin-top:5%;
+    color: #f9f9f9;
+    font-size:1rem;
+}
+
+#sign-up>a{
+    color: #f9f9f9;
+    text-decoration: underline;
+}
+
+#prices{
+    color: hsla(0,0%,75.3%,.8);
+    font-size: 1.1rem;
+}
+
+.arrow-container{
+    margin-top:4%;
+    width: 32px;
+    height:32px;
+}
+
+#arrow{
+    width: 32px;
+    fill: #f9f9f9
+}
+
+#arrow:hover{
+    cursor: pointer;
+}
+
+
+/* STARTING WORK ON THE SUB MAIN CONTAINER*/
+
+.sub-main-container{
+    background-image: url("https://cannonball-cdn.bamgrid.com/assets/originals/Soul_Groupwatch_Module_Desktop@2x_V4.jpg")
+}
+
+#section2{
+    float:left;
+    width: 100%;
+    margin-top:0%;
+    background-image: url('../img/Soul_Groupwatch_Module_Desktop@2x_V4.jpeg');
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading{
+    font-size:2.5rem;
+    color: #f9f9f9;
+    align-self:center;
+
+}
+.first-list{
+    color: hsla(0,0%,75.3%,.8);
+    align-self: center;
+    font-size: 1.5rem;
+    text-indent: 0%;
+    padding:0;
+}
+
+.first-list>li{
+    margin-top:10px;
+    text-wrap: nowrap;
+}
+
+.section2-container{
+    display: flex;
+    flex-direction:column;
+    width: 40%;
+    height:100%;
+    justify-content:center;
+}
+
+
+/* STARTING WORKL ON THIRD SECTION*/
+
+.section3{
+    float:left;
+    width: 100%;
+    margin-top:0%;
+    background-image: url('../img/blackpanter.jpeg');
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section3-container{
+    display: flex;
+    flex-direction:column;
+    width: 50%;
+    height: 100%;
+    margin-left:50%;
+    justify-content:center;
+}
+
+#section3-main-text{
+    font-size:2.5rem;
+    color: #f9f9f9;
+    align-self:start;
+}
+
+#section3-sub-text{
+    align-self: center;
+    font-size: 1.5rem;
+    color: hsla(0,0%,75.3%,.8);
+}
+
 
 
